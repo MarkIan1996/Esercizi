@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+
+<script type="text/javascript">
+
+
+function Persona (nome,cognome,indirizzo){
+	
+	this.nome=nome;
+	this.cognome=cognome;
+	this.indirizzo=indirizzo;
+	
+	}
+
+
+	var persone= new Array();
+	
+	  persone[0]= new Persona('pinco','pallino'," "); 
+	  persone[1]= new Persona('pin','pall'," "); 
+
+	
+	
+	var	nome=prompt ("INSERISCI IL NOME" ,"nome");
+	var	cognome=prompt("INSERISCI IL COGNOME","cognome");
+	
+	var auth=false;
+	for (var i=0; i<persone.length ; i++)
+		
+	
+		if (persone[i].nome==nome){
+			alert('autorizzato');
+			auth=true;
+		}
+		
+	if(!auth)	
+		
+		alert('autorizzato');
+</script>
+
+</body>
+</html>
