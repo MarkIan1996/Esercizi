@@ -1,0 +1,33 @@
+@CHARSET "ISO-8859-1";
+
+
+
+body{
+	
+	background-color: yellow;
+	background-image: url("img/sign-up.jpg");
+	margin: 2.5em;
+}
+
+
+h1{
+	
+	font-family:sans-serif;
+	font-size:2em;
+	color: red;
+	font-weight:normal;
+	text-align:center;
+}
+
+h2{
+	
+	border: solid red 5px;
+	padding: 20px;
+}
+
+.importante{
+	
+	
+	color:green;
+	font-weight:bold;
+}
