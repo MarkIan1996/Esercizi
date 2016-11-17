@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+
+<script type="text/javascript">
+var dimP = prompt ("INSERISCI LA DIMENSIONE DEL CARATTERE DEL TAG <p>","2");
+var colP = prompt ("INSERISCI IL COLORE PER IL TAG <p>","black");
+
+var dimH1 = prompt ("INSERISCI LA DIMENSIONE DEL CARATTERE DEL TAG <h1>","100px");
+var colH1 = prompt ("INSERISCI IL COLORE PER IL TAG <h1>","red");
+
+var dimB = prompt ("INSERISCI LA DIMENSIONE DEL CARATTERE DEL TAG <body>","2");
+var colB = prompt ("INSERISCI IL COLORE PER IL TAG <body>","black");
+
+var bgColB = prompt ("INSERISCI IL COLORE DI SFONDO PER IL TAG <body>","yellow");
+
+
+
+
+
+
+function changeBackground() {
+document.body.style.backgroundColor = bgColB;
+document.body.style.color=colB;
+document.getElementsByTagName("h1")[0].style.color=colH1;
+document.getElementsByTagName("h1")[0].style.fontSize=dimH1;
+}
+
+
+
+</script>
+
+<!-- <script type="text/javascript"> var style= document.getElementsByTagName("style").innerHTML="<style type=&quot;text/css&quot;> body {color: &lt;"+ colB "&gt;  background-color: &lt;"+ bgColB "&gt;  }      </style> "; -->
+
+
+
+
+</head>
+<body >
+
+
+
+<h1 >QUESTO E' IL TAG &lt;h1&gt;</h1>
+<p>  questo è il tag  &lt;p&gt;  </p>
+
+
+<script type="text/javascript">
+changeBackground();
+
+</script>
+
+</body>
+</html>
